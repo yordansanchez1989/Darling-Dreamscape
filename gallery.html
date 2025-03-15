@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Darling Dreamescape</title>
+</head>
+<body>
+   <!--Header--> 
+   <div class="header-section">
+    <header class="header-home">
+        <a href="index.html"><img src="Images/TrueLogo.png" alt="Logo" class="logo"></a>
+        
+    </header>
+    <nav class="nav-bar">
+        <ul class="nav-ul">
+            <li class="nav-li"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-li"><a href="prices.html" class="nav-link">Prices</a></li>
+            <li class="nav-li"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-li"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+   </div>
+   <section class="img-section">
+    <h1 class="gallery-main-text">Gallery</h1>
+    <div class="background-img">
+        <div class="content">
+            <a href="contact.html" class="contact-btn">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!--Gallery Section-->
+<section class="gallery-section">
+    <h1 class="section-title">Our Gallery</h1>
+
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="Images/Phgoto08.png" alt="Event Decoration" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Photo01.png" alt="Birthday Party Setup" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Photo02.png" alt="Wedding Decor" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Photo03.png" alt="Baby Shower Setup" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Photo04.png" alt="Luxury Event Decor" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Photo05.png" alt="Corporate Event Setup" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Photo06.png" alt="Outdoor Event" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Photo07.png" alt="Table Setup" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Photo09.png" alt="Flower Arrangement" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Photo10.png" alt="Luxury Decor" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Photo11.png" alt="Elegant Theme" onclick="openLightbox(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/photo12.jpg" alt="Event Backdrop" onclick="openLightbox(this)">
+        </div>
+    </div>
+</section>
+
+<section class="contact-contact-section">
+    <h2 class="contact-title">Get in Touch</h2>
+
+    <form action="https://formsubmit.co/yordansanchez1989@gmail.com" method="POST" class="contact-form-prices">
+
+        <!-- Redirect to thank-you page -->
+        <input type="hidden" name="_redirect" value="thankyou.html">
+    
+        <!-- Prevent spam -->
+        <input type="hidden" name="_captcha" value="false">
+    
+        <input type="text" name="name" placeholder="Name" required class="form-input">
+        <input type="email" name="email" placeholder="Email" required class="form-input">
+        <input type="tel" name="phone" placeholder="Phone" required class="form-input">
+        <input type="text" name="event-type" placeholder="Event Type" required class="form-input">
+        <input type="date" name="event-date" required class="form-input">
+        <input type="text" name="event-location" placeholder="Event Location" required class="form-input">
+        <textarea name="message" placeholder="Message" required class="form-textarea"></textarea>
+    
+        <button type="submit" class="submit-btn">Send Message</button>
+    
+    </form>
+
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <img src="Images/TrueLogo.png" alt="Darling Dreamscape Logo" class="footer-logo">
+            <p>Creating unforgettable memories with elegant decorations for every occasion.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p><strong>Address:</strong> 1234 Dreamscape Avenue, Miami, FL</p>
+            <p><strong>Email:</strong> contact@darlingdreamscape.com</p>
+            <p><strong>Phone:</strong> (786) 750-1169</p>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/darlingdreamescapevent/?igsh=MWtuYnF1ZnR0NHVqdA%3D%3D&utm_source=qr#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#faf4f4" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg></a>
+
+                <a href="https://www.facebook.com/people/Darlingdreamescapeevents/61572012344454/?mibextid=wwXIfr&rdid=LsAdAOskMGiBRoA3&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BtLXiCZhc%2F%3Fmibextid%3DwwXIfr" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#faf4f4" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path></svg></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Darling Dreamscape. All rights reserved.</p>
+    </div>
+</footer>
+<script>
+    const currentLocation = window.location.href;
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    navLinks.forEach(link => {
+        if (link.href === currentLocation) {
+            link.classList.add("active");
+        }
+    });
+</script>
+</body>
